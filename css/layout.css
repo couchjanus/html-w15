@@ -20,10 +20,7 @@
 	height: 45px;
 }
 
-
-/*  */
-
-/* .footer {
+.footer {
 	padding: 0;
 	border-top: 1px solid #CECECE;
 }
@@ -46,8 +43,62 @@
     color: #002e5b;
 }
 
- */
 
 
+/* special */
 
+section.special, article.special {
+    text-align: center;
+}
 
+header.special {
+    position: relative;
+    text-align: center;
+    padding-top: 5.5em;
+    margin-bottom: 4em;
+}
+header.special h2 {
+	font-size: 2em;
+	margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+header.special h2 + p {
+    margin-bottom: 0;
+    padding-top: 1.5em;
+} 
+
+/* major */
+
+header.major {
+	font-size: 2em;
+}
+
+.about{
+	margin: 0 auto;
+}
+
+/* Icon */
+
+.icon {
+	text-decoration: none;
+	text-align: center;
+    position: relative;
+}
+
+.icon.featured {
+    cursor: default;
+    display: block;
+    margin: 0 0 1.5em 0;
+    opacity: 0.35;
+    text-align: center;
+}
+
+.icon.featured:before {
+    font-size: 5em;
+    line-height: 1em;
+}
+
+.icon > .label {
+    display: none;
+}
