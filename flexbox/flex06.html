@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, flex!</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="./header.css">
+
+    <link rel="stylesheet" href="./flexlayout.css">
+
+    <style>
+      
+
+    .wrapper {
+        max-width: 90%;
+        margin: 50px auto;
+    }
+    .centeredChild__item + .centeredChild__item {
+        margin-top: 5px;
+    }
+
+    .siteHeader {
+        display: flex;
+        justify-content: space-between;
+      
+        padding: 10px;
+        background-color: #025a1ff1;
+    }
+      
+    .siteHeader__section {
+        display: flex;
+        align-items: center;
+    }
+      
+    .siteHeader__item {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+      
+    .siteHeader__item + .siteHeader__item {
+        margin-left: 5px;
+    }
+      
+    .siteHeader__item.is-site-header-item-selected {
+        color: #FFFFFF;
+        background-color: rgba(02, 64, 23, 0.5);
+        border-radius: 4px;
+    }
+      
+    .siteHeaderLogo {
+        font-size: 20px;
+        line-height: 0;
+        color: white;
+    }
+      
+    .siteHeaderButton {
+        cursor: pointer;
+        color: #99cc99;
+    }
+    .siteHeaderButton:hover {
+        cursor: pointer;
+        color: #fff;
+    }
+
+    
+    .card {
+        display: flex;
+      
+        flex-direction: column;
+      
+        border: 1px solid #CAD0D2;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      
+        .card__description {
+          display: flex;
+      
+          flex-direction: column;
+      
+          justify-content: center;
+      
+          align-items: center;
+      
+          padding: 15px 0;
+        }
+      
+          .card__descriptionIcon {
+            font-size: 32px;
+            margin-bottom: 10px;
+          }
+      
+          .card__descriptionText {
+            color: #57727C;
+            font-size: 12px;
+            text-align: center;
+            max-width: calc(100% - 30px);
+          }
+      
+        .card__price {
+          text-align: center;
+          color: #57727C;
+          font-size: 12px;
+          font-weight: 700;
+          padding: 5px 15px;
+          border-top: 1px solid #D7DBDD;
+          background-color: #EEF3F5;
+        }
+      
+      .card--fixedWidth {
+        max-width: 120px;
+      }
+    
+
+
+      .cardGroup {
+        display: flex;
+      
+        border: 1px solid #CAD0D2;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      
+        .cardGroup__card {
+          flex: 1 1 0%;
+      
+          border: none;
+          border-radius: 0;
+        }
+      
+        .cardGroup__card + .cardGroup__card {
+          border-left: 1px solid #D7DBDD;
+        }
+      
+        .cardGroup__cardDescription {
+          flex: 1 1 auto;
+        }
+      
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Site header-->
+    
+    <nav class="siteHeader">
+        <!-- This section gets pushed to the left side-->
+        <div class="siteHeader__section">
+            <div class="siteHeader__item siteHeaderLogo">
+                <div class="fa fa-inbox"></div>
+            </div>
+            <div class="siteHeader__item siteHeaderButton is-site-header-item-selected">Home</div>
+            <div class="siteHeader__item siteHeaderButton">About</div>
+            <div class="siteHeader__item siteHeaderButton">Blog</div>
+        </div>
+        <!-- This section gets pushed to the right side-->
+        <div class="siteHeader__section">
+            <div class="siteHeader__item siteHeaderButton">Contact</div>
+            <div class="siteHeader__item siteHeaderButton">Sign In</div>
+        </div>
+    </nav>
+      
+        <div class="centeredParent">
+                <article class="centeredChild">
+                
+                <div class="inner">
+                <div class="centeredChild__item centeredLabel"><h2>SHOPAHOLIC</h2></div>
+                  <div class="centeredChild__item centeredDetails">
+                      Thanks for signing up. Let&rsquo;s take a look around.
+                      <div class="button">Tell Me More</div>
+                  </div>
+    
+                </div>
+                </article>
+              </div>
+
+        
+        <!-- Card group-->
+    <div class="wrapper">
+        <div class="cardGroup">
+            <div class="card cardGroup__card">
+              <div class="card__description cardGroup__cardDescription">
+                <div class="icon fa fa-thumbs-up card__descriptionIcon"></div>
+                <div class="card__descriptionText">Trial</div>
+              </div>
+              <div class="card__price">Free!</div>
+            </div>
+            <div class="card cardGroup__card">
+              <div class="card__description cardGroup__cardDescription">
+                <div class="icon fa fa-trophy card__descriptionIcon"></div>
+                <div class="card__descriptionText">Basic tier<br/>(most popular)</div>
+              </div>
+              <div class="card__price">$10.00</div>
+            </div>
+            <div class="card cardGroup__card">
+              <div class="card__description cardGroup__cardDescription">
+                <div class="icon fa fa-bolt card__descriptionIcon"></div>
+                <div class="card__descriptionText">Advanced tier<br/>(only for enterprise-level professionals)</div>
+              </div>
+              <div class="card__price">$6,000.00</div>
+            </div>
+          </div>
+        </div>          
+
+              <!-- start section footer -->
+              <footer id="footer" class="centeredFooter">
+                <span class="text-muted">&copy; Copyrights Red Cats. All rights reserved.</span>
+              </footer>
+              <!-- End section footer -->
+
+  <!-- End section footer -->
+
+  </body>
+</html>

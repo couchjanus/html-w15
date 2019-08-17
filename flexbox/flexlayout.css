@@ -1,0 +1,26 @@
+.centeredParent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+  }
+
+  .centeredFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+  }
+  .centeredLabel {
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+}
+.centeredDetails {
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 10px;
+    text-align: center;
+}

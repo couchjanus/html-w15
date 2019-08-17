@@ -1,0 +1,87 @@
+.centeredParent {
+    min-height: 300px;
+    padding: 6em 0;
+    background-attachment: fixed;
+    background-color: #025a1ff1;
+    background-image: url("../images/3.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .centeredFooter {
+    min-height: 300px;
+  }
+
+  .inner {
+    margin: auto;
+    padding: 3em;
+    background: rgba(02, 64, 23, 0.5);
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+  }
+
+  .inner h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding: 0.5em 0;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+  }
+
+  @media screen and (max-width: 700px) {
+    .inner h2 {
+      font-size: 1em;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  @media screen and (max-width: 530px) {
+    .inner h2 {
+      font-size: 0.5em;
+    }
+    .centeredDetails {
+      font-size: 0.2em;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .inner {
+      display: none
+    }
+  }
+
+  .centeredDetails {
+      color: #fff;
+      font-size: 1em;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+  .centeredLabel {
+    color: #fff;
+    padding: 4px;
+    text-align: center;
+    border-bottom: solid 2px;
+    border-top: solid 2px;
+}
+
+  .button {
+    margin-top: 1em;
+    border: solid 1px;
+    font-size: 0.8em;
+    font-weight: 900;
+    letter-spacing: 2px;
+    min-width: 18em;
+    padding: 0 0.75em;
+    line-height: 3.75em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: rgba(188, 202, 206, 0.15);
+    border-color: inherit;
+}

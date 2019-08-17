@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, flex!</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="./header.css">
+
+    <link rel="stylesheet" href="./flexlayout.css">
+
+    <style>
+    .centeredChild__item + .centeredChild__item {
+        margin-top: 5px;
+    }
+
+    .siteHeader {
+        display: flex;
+        justify-content: space-between;
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+            
+        padding: 10px;
+        background-color: #025a1ff1;
+    }
+      
+      
+    .siteHeader__item {
+        padding: 5px 15px;
+        font-size: 12px;
+    }
+      
+    .siteHeader__item + .siteHeader__item {
+        margin-left: 5px;
+    }
+      
+    .siteHeader__item.is-site-header-item-selected {
+        color: #FFFFFF;
+        background-color: rgba(02, 64, 23, 0.5);
+        border-radius: 4px;
+    }
+      
+    .siteHeaderLogo {
+        font-size: 20px;
+        line-height: 0;
+        color: white;
+    }
+      
+    .siteHeaderButton {
+        cursor: pointer;
+        color: #99cc99;
+    }
+    .siteHeaderButton:hover {
+        cursor: pointer;
+        color: #fff;
+    }
+          
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Site header-->
+    <nav class="siteHeader">
+        <!-- This section gets pushed to the left side-->
+            <div class="siteHeader__item siteHeaderLogo">
+                <div class="fa fa-inbox"></div>
+            </div>
+            <div class="siteHeader__item siteHeaderButton is-site-header-item-selected">Home</div>
+            <div class="siteHeader__item siteHeaderButton">About</div>
+            <div class="siteHeader__item siteHeaderButton">Blog</div>
+            <div class="siteHeader__item siteHeaderButton">Contact</div>
+            <div class="siteHeader__item siteHeaderButton">Sign In</div>
+    </nav>
+      
+        <div class="centeredParent">
+                <article class="centeredChild">
+                
+                <div class="inner">
+                <div class="centeredChild__item centeredLabel"><h2>SHOPAHOLIC</h2></div>
+                  <div class="centeredChild__item centeredDetails">
+                      Thanks for signing up. Let&rsquo;s take a look around.
+                      <div class="button">Tell Me More</div>
+                  </div>
+    
+                </div>
+                </article>
+              </div>
+          
+              <!-- start section footer -->
+              <footer id="footer" class="centeredFooter">
+                <span class="text-muted">&copy; Copyrights Red Cats. All rights reserved.</span>
+              </footer>
+              <!-- End section footer -->
+
+  <!-- End section footer -->
+
+  </body>
+</html>
