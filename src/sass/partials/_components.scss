@@ -1,0 +1,77 @@
+.pt-20 {
+  padding-top: 20px;
+}
+
+.box-shadow {
+  @include card-shadow($shadow);
+  @include round-corners(20px);
+    
+  border-top: $border-side;
+  border-bottom: $border-side; 
+}
+
+.container {
+  color: $body-color;
+}
+
+
+.container {
+  width: 100%;
+}
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+// nav {
+//   ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+//   }
+
+//   li { display: inline-block; }
+
+//   a {
+//     display: block;
+//     padding: 6px 12px;
+//     text-decoration: none;
+//   }
+// }
+
+// .error {
+//   border: 1px #f00;
+//   background-color: #fdd;
+// }
+// .error.intrusion {
+//   background-image: url("/image/hacked.png");
+// }
+// .seriousError {
+//   @extend .error;
+//   border-width: 3px;
+// }
+
+// a {
+//   font-weight: bold;
+//   text-decoration: none;
+//   &:hover { text-decoration: underline; }
+//   body.firefox & { font-weight: normal; }
+// }
+
+// #main {
+//   color: black;
+//   a {
+//     font-weight: bold;
+//     &:hover { color: red; }
+//   }
+// }
+
+// #main {
+//   color: black;
+//   &-sidebar { border: 1px solid; }
+// }
+
